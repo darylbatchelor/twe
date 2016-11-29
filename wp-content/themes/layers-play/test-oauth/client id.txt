@@ -1,0 +1,5 @@
+client id
+661603566580-97cnesi4uh4fqp15f2vs1mdasph85uks.apps.googleusercontent.com
+
+client secret
+oUcgT1sYGC-EFMgIBAYylWKH
