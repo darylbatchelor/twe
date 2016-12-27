@@ -4,7 +4,7 @@ Donate link: http://www.weblizar.com/
 Tags: admin, admin login, admin login page, customize, admin custom login, custom login,  branding, custom login, custom login pro, customization, error, login, login error, logo,  customization, themes, wordpress login, login form, admin login form, wordpress login, plugin, jquery form, jquery,  customization, customizer, custom login plugin, background , sideshow, social form, social connect, social share, facebook, twitter, google plug, linkedin, background slideshow, image, logo, custom logo, wordpress admin login, wp login, wp-login, log in, admin, role, subscriber, captcha, security login, customize wordpress login form, wp login form, login form plugin, ogin page, logo, style log in, style login, themes, custom login page, css , html, form style,       
 Requires at least: 3.5
 Tested up to: 4.6.1
-Stable tag: 2.4.5.4
+Stable tag: 2.4.7
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -92,6 +92,8 @@ Theere you able update plugin design with unlimited colours. Colour option is av
 * Hindi(hi_HI) by [Infigo Software](http://infigosoft.com)
 * German(de_DE) or Deutsch by Markus Petautschnig aka X00LA
 * Portuguese(pt_BR) by An User
+* French Translation by [Gilles Santacreu](http://www.boursikoter.com/)
+* Dutch Translation by [Markus P.](https://plus.google.com/+MarkusPetautschnig78)
 
 If you have any question contact us at here: [Plugin Support Forum ](http://wordpress.org/support/plugin/admin-custom-login) 
 
@@ -117,6 +119,10 @@ If you have any question contact us at here: [Plugin Support Forum ](http://word
 
 For more information, see [Weblizar](http://wwww.weblizar.com/)
 
+= 2.4.7 = 
+* update
+= 2.4.6 = 
+* Dutch Translation Added
 = Version 2.4.5.4 10/10/2016 =
 * Small Update
 = Version 2.4.5.3 16/09/2016 =

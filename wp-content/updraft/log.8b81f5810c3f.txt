@@ -1,0 +1,385 @@
+0000.001 (0) Opened log file at time: Mon, 26 Dec 2016 07:22:57 +0000 on http://localhost/wifeenigma
+0000.005 (0) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.12.30 WP: 4.7 PHP: 5.6.15 (apache2handler, Windows NT CGDESIGNLAPTOP 6.2 build 9200 (Windows 8 Professional Edition) i586) MySQL: 5.5.5 WPLANG: en_AU Server: Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.15 safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 28.4M | 29M) multisite: N openssl: OpenSSL 1.0.1p 9 Jul 2015 mcrypt: Y LANG:  ZipArchive::addFile: Y
+0000.007 (0) Free space on disk containing Updraft's temporary directory: 73008.1 MB
+0000.012 (0) Tasks: Backup files: 1 (schedule: weekly) Backup DB:  (schedule: weekly)
+0000.015 (0) Processed schedules. Combining jobs from identical schedules. Tasks now: Backup files: 1 Backup DB: 1
+0000.021 (0) Requesting semaphore lock (fd) (apparently via scheduler: last_scheduled_action_called_at=1482736295, seconds_ago=682)
+0000.030 (0) Set semaphore last lock (fd) time to 2016-12-26 07:22:57
+0000.032 (0) Semaphore lock (fd) complete
+0000.043 (0) Backup run: resumption=0, nonce=8b81f5810c3f, begun at=1482736977 (0s ago), job type=backup
+0000.050 (0) Scheduling a resumption (1) after 300 seconds (1482737277) in case this run gets aborted
+0000.063 (0) Checking if we have a zip executable available
+0000.072 (0) Creation of backups of directories: beginning
+0000.085 (0) Beginning creation of dump of plugins (split every: 400 MB)
+0010.527 (0) Total entities for the zip file: 957 directories, 8619 files (0 skipped as non-modified), 74.8 MB
+0010.560 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (0 MB, 1 (1) files added so far); re-opening (prior size: 0 KB)
+0010.644 (0) Zip: backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-plugins.zip.tmp: 100 files added (on-disk size: 209.4 KB)
+0010.725 (0) Zip: backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-plugins.zip.tmp: 200 files added (on-disk size: 209.4 KB)
+0010.804 (0) Zip: backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-plugins.zip.tmp: 300 files added (on-disk size: 209.4 KB)
+0010.886 (0) Zip: backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-plugins.zip.tmp: 400 files added (on-disk size: 209.4 KB)
+0010.972 (0) Zip: backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-plugins.zip.tmp: 500 files added (on-disk size: 209.4 KB)
+0010.977 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (15.8 MB, 8619 files batched, 501 (502) added so far); re-opening (prior size: 209.4 KB)
+0012.424 (0) Zip: backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-plugins.zip.tmp: 600 files added (on-disk size: 8436.7 KB)
+0012.525 (0) Zip: backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-plugins.zip.tmp: 700 files added (on-disk size: 8436.7 KB)
+0012.640 (0) Zip: backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-plugins.zip.tmp: 800 files added (on-disk size: 8436.7 KB)
+0012.751 (0) Zip: backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-plugins.zip.tmp: 900 files added (on-disk size: 8436.7 KB)
+0012.846 (0) Zip: backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-plugins.zip.tmp: 1000 files added (on-disk size: 8436.7 KB)
+0012.852 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (3.6 MB, 8619 files batched, 501 (1003) added so far); re-opening (prior size: 8436.7 KB)
+0013.489 (0) Zip: backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-plugins.zip.tmp: 1100 files added (on-disk size: 9861.6 KB)
+0013.687 (0) Zip: backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-plugins.zip.tmp: 1200 files added (on-disk size: 9861.6 KB)
+0013.861 (0) Zip: backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-plugins.zip.tmp: 1300 files added (on-disk size: 9861.6 KB)
+0014.078 (0) Zip: backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-plugins.zip.tmp: 1400 files added (on-disk size: 9861.6 KB)
+0014.292 (0) Zip: backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-plugins.zip.tmp: 1500 files added (on-disk size: 9861.6 KB)
+0014.304 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (1.2 MB, 8619 files batched, 501 (1504) added so far); re-opening (prior size: 9861.6 KB)
+0014.669 (0) Zip: backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-plugins.zip.tmp: 1600 files added (on-disk size: 10393.8 KB)
+0014.835 (0) Zip: backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-plugins.zip.tmp: 1700 files added (on-disk size: 10393.8 KB)
+0015.005 (0) Zip: backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-plugins.zip.tmp: 1800 files added (on-disk size: 10393.8 KB)
+0015.177 (0) Zip: backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-plugins.zip.tmp: 1900 files added (on-disk size: 10393.8 KB)
+0015.361 (0) Zip: backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-plugins.zip.tmp: 2000 files added (on-disk size: 10393.8 KB)
+0015.376 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (1.2 MB, 8619 files batched, 501 (2005) added so far); re-opening (prior size: 10393.8 KB)
+0015.745 (0) Zip: backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-plugins.zip.tmp: 2100 files added (on-disk size: 10907.8 KB)
+0015.923 (0) Zip: backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-plugins.zip.tmp: 2200 files added (on-disk size: 10907.8 KB)
+0016.101 (0) Zip: backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-plugins.zip.tmp: 2300 files added (on-disk size: 10907.8 KB)
+0016.284 (0) Zip: backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-plugins.zip.tmp: 2400 files added (on-disk size: 10907.8 KB)
+0016.472 (0) Zip: backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-plugins.zip.tmp: 2500 files added (on-disk size: 10907.8 KB)
+0016.485 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (1.1 MB, 8619 files batched, 501 (2506) added so far); re-opening (prior size: 10907.8 KB)
+0016.843 (0) Zip: backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-plugins.zip.tmp: 2600 files added (on-disk size: 11452.3 KB)
+0017.055 (0) Zip: backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-plugins.zip.tmp: 2700 files added (on-disk size: 11452.3 KB)
+0017.336 (0) Zip: backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-plugins.zip.tmp: 2800 files added (on-disk size: 11452.3 KB)
+0017.539 (0) Zip: backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-plugins.zip.tmp: 2900 files added (on-disk size: 11452.3 KB)
+0017.730 (0) Zip: backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-plugins.zip.tmp: 3000 files added (on-disk size: 11452.3 KB)
+0017.748 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (1.1 MB, 8619 files batched, 501 (3007) added so far); re-opening (prior size: 11452.3 KB)
+0018.153 (0) Zip: backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-plugins.zip.tmp: 3100 files added (on-disk size: 11954.4 KB)
+0018.400 (0) Zip: backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-plugins.zip.tmp: 3200 files added (on-disk size: 11954.4 KB)
+0018.677 (0) Zip: backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-plugins.zip.tmp: 3300 files added (on-disk size: 11954.4 KB)
+0018.970 (0) Zip: backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-plugins.zip.tmp: 3400 files added (on-disk size: 11954.4 KB)
+0019.253 (0) Zip: backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-plugins.zip.tmp: 3500 files added (on-disk size: 11954.4 KB)
+0019.274 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (1.4 MB, 8619 files batched, 501 (3508) added so far); re-opening (prior size: 11954.4 KB)
+0019.687 (0) Zip: backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-plugins.zip.tmp: 3600 files added (on-disk size: 12505.8 KB)
+0019.884 (0) Zip: backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-plugins.zip.tmp: 3700 files added (on-disk size: 12505.8 KB)
+0020.105 (0) Zip: backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-plugins.zip.tmp: 3800 files added (on-disk size: 12505.8 KB)
+0020.314 (0) Zip: backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-plugins.zip.tmp: 3900 files added (on-disk size: 12505.8 KB)
+0020.518 (0) Zip: backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-plugins.zip.tmp: 4000 files added (on-disk size: 12505.8 KB)
+0020.539 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (1.1 MB, 8619 files batched, 501 (4009) added so far); re-opening (prior size: 12505.8 KB)
+0020.915 (0) Zip: backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-plugins.zip.tmp: 4100 files added (on-disk size: 13027.2 KB)
+0021.112 (0) Zip: backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-plugins.zip.tmp: 4200 files added (on-disk size: 13027.2 KB)
+0021.310 (0) Zip: backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-plugins.zip.tmp: 4300 files added (on-disk size: 13027.2 KB)
+0021.519 (0) Zip: backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-plugins.zip.tmp: 4400 files added (on-disk size: 13027.2 KB)
+0021.737 (0) Zip: backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-plugins.zip.tmp: 4500 files added (on-disk size: 13027.2 KB)
+0021.761 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (0.9 MB, 8619 files batched, 501 (4510) added so far); re-opening (prior size: 13027.2 KB)
+0022.158 (0) Zip: backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-plugins.zip.tmp: 4600 files added (on-disk size: 13520.2 KB)
+0022.364 (0) Zip: backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-plugins.zip.tmp: 4700 files added (on-disk size: 13520.2 KB)
+0022.570 (0) Zip: backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-plugins.zip.tmp: 4800 files added (on-disk size: 13520.2 KB)
+0022.776 (0) Zip: backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-plugins.zip.tmp: 4900 files added (on-disk size: 13520.2 KB)
+0022.983 (0) Zip: backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-plugins.zip.tmp: 5000 files added (on-disk size: 13520.2 KB)
+0023.011 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (1.1 MB, 8619 files batched, 501 (5011) added so far); re-opening (prior size: 13520.2 KB)
+0023.417 (0) Zip: backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-plugins.zip.tmp: 5100 files added (on-disk size: 14025.3 KB)
+0023.627 (0) Zip: backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-plugins.zip.tmp: 5200 files added (on-disk size: 14025.3 KB)
+0023.838 (0) Zip: backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-plugins.zip.tmp: 5300 files added (on-disk size: 14025.3 KB)
+0024.028 (0) Zip: backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-plugins.zip.tmp: 5400 files added (on-disk size: 14025.3 KB)
+0024.198 (0) Zip: backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-plugins.zip.tmp: 5500 files added (on-disk size: 14025.3 KB)
+0024.222 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (1.5 MB, 8619 files batched, 501 (5512) added so far); re-opening (prior size: 14025.3 KB)
+0024.641 (0) Zip: backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-plugins.zip.tmp: 5600 files added (on-disk size: 14645.1 KB)
+0024.830 (0) Zip: backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-plugins.zip.tmp: 5700 files added (on-disk size: 14645.1 KB)
+0024.988 (0) Zip: backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-plugins.zip.tmp: 5800 files added (on-disk size: 14645.1 KB)
+0025.111 (0) Zip: backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-plugins.zip.tmp: 5900 files added (on-disk size: 14645.1 KB)
+0025.227 (0) Zip: backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-plugins.zip.tmp: 6000 files added (on-disk size: 14645.1 KB)
+0025.246 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (5.5 MB, 8619 files batched, 501 (6013) added so far); re-opening (prior size: 14645.1 KB)
+0025.918 (0) Zip: backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-plugins.zip.tmp: 6100 files added (on-disk size: 17216.5 KB)
+0026.029 (0) Zip: backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-plugins.zip.tmp: 6200 files added (on-disk size: 17216.5 KB)
+0026.168 (0) Zip: backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-plugins.zip.tmp: 6300 files added (on-disk size: 17216.5 KB)
+0026.293 (0) Zip: backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-plugins.zip.tmp: 6400 files added (on-disk size: 17216.5 KB)
+0026.424 (0) Zip: backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-plugins.zip.tmp: 6500 files added (on-disk size: 17216.5 KB)
+0026.446 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (5 MB, 8619 files batched, 501 (6514) added so far); re-opening (prior size: 17216.5 KB)
+0027.100 (0) Zip: backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-plugins.zip.tmp: 6600 files added (on-disk size: 18630.7 KB)
+0027.234 (0) Zip: backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-plugins.zip.tmp: 6700 files added (on-disk size: 18630.7 KB)
+0027.345 (0) Zip: backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-plugins.zip.tmp: 6800 files added (on-disk size: 18630.7 KB)
+0027.493 (0) Zip: backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-plugins.zip.tmp: 6900 files added (on-disk size: 18630.7 KB)
+0027.648 (0) Zip: backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-plugins.zip.tmp: 7000 files added (on-disk size: 18630.7 KB)
+0027.676 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (13.5 MB, 8619 files batched, 501 (7015) added so far); re-opening (prior size: 18630.7 KB)
+0029.061 (0) Zip: backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-plugins.zip.tmp: 7100 files added (on-disk size: 22064.5 KB)
+0029.272 (0) Zip: backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-plugins.zip.tmp: 7200 files added (on-disk size: 22064.5 KB)
+0029.490 (0) Zip: backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-plugins.zip.tmp: 7300 files added (on-disk size: 22064.5 KB)
+0029.649 (0) Zip: backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-plugins.zip.tmp: 7400 files added (on-disk size: 22064.5 KB)
+0029.781 (0) Zip: backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-plugins.zip.tmp: 7500 files added (on-disk size: 22064.5 KB)
+0029.802 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (3.5 MB, 8619 files batched, 501 (7516) added so far); re-opening (prior size: 22064.5 KB)
+0030.530 (0) Zip: backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-plugins.zip.tmp: 7600 files added (on-disk size: 23437.3 KB)
+0030.665 (0) Zip: backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-plugins.zip.tmp: 7700 files added (on-disk size: 23437.3 KB)
+0030.792 (0) Zip: backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-plugins.zip.tmp: 7800 files added (on-disk size: 23437.3 KB)
+0030.954 (0) Zip: backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-plugins.zip.tmp: 7900 files added (on-disk size: 23437.3 KB)
+0031.135 (0) Zip: backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-plugins.zip.tmp: 8000 files added (on-disk size: 23437.3 KB)
+0031.171 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (14.9 MB, 8619 files batched, 501 (8017) added so far); re-opening (prior size: 23437.3 KB)
+0032.951 (0) Zip: backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-plugins.zip.tmp: 8100 files added (on-disk size: 27867.5 KB)
+0033.127 (0) Zip: backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-plugins.zip.tmp: 8200 files added (on-disk size: 27867.5 KB)
+0033.311 (0) Zip: backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-plugins.zip.tmp: 8300 files added (on-disk size: 27867.5 KB)
+0033.497 (0) Zip: backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-plugins.zip.tmp: 8400 files added (on-disk size: 27867.5 KB)
+0033.685 (0) Zip: backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-plugins.zip.tmp: 8500 files added (on-disk size: 27867.5 KB)
+0033.724 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (1.7 MB, 8619 files batched, 501 (8518) added so far); re-opening (prior size: 27867.5 KB)
+0034.255 (0) Zip: backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-plugins.zip.tmp: 8600 files added (on-disk size: 28541.6 KB)
+0034.597 (0) Created plugins zip (0) - 28736.5 KB in 34.5 s (832.8 KB/s) (SHA1 checksum: f623d88b72cb389eb075cdcaa8b81a4a5a421cd1)
+0034.604 (0) Beginning creation of dump of themes (split every: 400 MB)
+0034.914 (0) Total entities for the zip file: 64 directories, 554 files (0 skipped as non-modified), 14.7 MB
+0034.965 (0) Zip: backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-themes.zip.tmp: 100 files added (on-disk size: 0 KB)
+0035.040 (0) Zip: backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-themes.zip.tmp: 200 files added (on-disk size: 0 KB)
+0035.128 (0) Zip: backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-themes.zip.tmp: 300 files added (on-disk size: 0 KB)
+0035.224 (0) Zip: backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-themes.zip.tmp: 400 files added (on-disk size: 0 KB)
+0035.289 (0) Zip: backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-themes.zip.tmp: 500 files added (on-disk size: 0 KB)
+0035.292 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (13.7 MB, 554 files batched, 501 (501) added so far); re-opening (prior size: 0 KB)
+0036.311 (0) Created themes zip (0) - 10858.6 KB in 1.7 s (6377 KB/s) (SHA1 checksum: 8d2ffb8dfdaadc8bdba24174da61aa50af8bcb7a)
+0036.319 (0) Exclusion option setting (uploads): backup*,*backups,backwpup*,wp-clone,snapshots
+0036.322 (0) Looking for candidates to back up in: C:\xampp\htdocs\wifeenigma/wp-content/uploads
+0036.324 (0) finding files: 2016: adding to list (1)
+0036.327 (0) Beginning creation of dump of uploads (split every: 400 MB)
+0036.358 (0) Total entities for the zip file: 4 directories, 87 files (0 skipped as non-modified), 4.3 MB
+0036.584 (0) Created uploads zip (0) - 4414.9 KB in 0.3 s (17528.3 KB/s) (SHA1 checksum: a4ccc3bf35b61e128c2d9840cb7f4d7d1b0bf51d)
+0036.590 (0) Beginning backup of other directories found in the content directory (index: 0)
+0036.592 (0) Exclusion option setting (others): upgrade,cache,updraft,backup*,*backups,mysql.sql,debug.log
+0036.593 (0) Looking for candidates to back up in: C:\xampp\htdocs\wifeenigma/wp-content
+0036.595 (0) finding files: index.php: adding to list (1)
+0036.597 (0) finding files: languages: adding to list (2)
+0036.600 (0) finding files: plugins: skipping: this is the plugins directory
+0036.602 (0) finding files: themes: skipping: this is the themes directory
+0036.605 (0) finding files: updraft: skipping: this is the updraft directory
+0036.608 (0) finding files: upgrade: skipping: excluded by options
+0036.611 (0) finding files: uploads: skipping: this is the uploads directory
+0036.624 (0) Total entities for the zip file: 3 directories, 17 files (0 skipped as non-modified), 1.5 MB
+0036.814 (0) Created others zip (0) - 373.1 KB in 0.2 s (1882.4 KB/s) (SHA1 checksum: 98c3df481141e9e7091cd5c3bdd4b9e3b3e8086a)
+0036.826 (0) Saving backup status to database (elements: 8)
+0036.832 (0) Beginning creation of database dump (WordPress DB)
+0036.849 (0) Table wp_options: Total expected rows (approximate): 358
+0036.948 (0) Table wp_options: Total rows added: 364 in 0.10 seconds
+0036.951 (0) Table wp_options: finishing file (backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-db-table-wp_options.table.gz - 252.9 KB)
+0036.960 (0) Table wp_users: Total expected rows (approximate): 6
+0036.966 (0) Table wp_users: Total rows added: 7 in 0.00 seconds
+0036.969 (0) Table wp_users: finishing file (backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-db-table-wp_users.table.gz - 0.9 KB)
+0036.978 (0) Table wp_usermeta: Total expected rows (approximate): 224
+0036.988 (0) Table wp_usermeta: Total rows added: 242 in 0.01 seconds
+0036.991 (0) Table wp_usermeta: finishing file (backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-db-table-wp_usermeta.table.gz - 3.3 KB)
+0037.000 (0) Table wp_commentmeta: Total expected rows (approximate): 0
+0037.005 (0) Table wp_commentmeta: Total rows added: 0 in 0.00 seconds
+0037.008 (0) Table wp_commentmeta: finishing file (backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-db-table-wp_commentmeta.table.gz - 0.4 KB)
+0037.016 (0) Table wp_comments: Total expected rows (approximate): 1
+0037.022 (0) Table wp_comments: Total rows added: 0 in 0.00 seconds
+0037.024 (0) Table wp_comments: finishing file (backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-db-table-wp_comments.table.gz - 0.5 KB)
+0037.035 (0) Table wp_links: Total expected rows (approximate): 0
+0037.042 (0) Table wp_links: Total rows added: 0 in 0.00 seconds
+0037.045 (0) Table wp_links: finishing file (backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-db-table-wp_links.table.gz - 0.4 KB)
+0037.057 (0) Table wp_postmeta: Total expected rows (approximate): 2378
+0037.231 (0) Table wp_postmeta: Total rows added: 2421 in 0.17 seconds
+0037.236 (0) Table wp_postmeta: finishing file (backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-db-table-wp_postmeta.table.gz - 134.5 KB)
+0037.267 (0) Table wp_posts: Total expected rows (approximate): 488
+0038.569 (0) Table wp_posts: Total rows added: 816 in 1.29 seconds
+0038.576 (0) Table wp_posts: finishing file (backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-db-table-wp_posts.table.gz - 777.4 KB)
+0038.590 (0) Table wp_term_relationships: Total expected rows (approximate): 9
+0038.598 (0) Table wp_term_relationships: Total rows added: 11 in 0.00 seconds
+0038.602 (0) Table wp_term_relationships: finishing file (backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-db-table-wp_term_relationships.table.gz - 0.4 KB)
+0038.616 (0) Table wp_term_taxonomy: Total expected rows (approximate): 6
+0038.624 (0) Table wp_term_taxonomy: Total rows added: 8 in 0.01 seconds
+0038.628 (0) Table wp_term_taxonomy: finishing file (backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-db-table-wp_term_taxonomy.table.gz - 0.5 KB)
+0038.641 (0) Table wp_termmeta: Total expected rows (approximate): 0
+0038.656 (0) Table wp_termmeta: Total rows added: 0 in 0.01 seconds
+0038.661 (0) Table wp_termmeta: finishing file (backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-db-table-wp_termmeta.table.gz - 0.4 KB)
+0038.673 (0) Table wp_terms: Total expected rows (approximate): 8
+0038.680 (0) Table wp_terms: Total rows added: 8 in 0.00 seconds
+0038.684 (0) Table wp_terms: finishing file (backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-db-table-wp_terms.table.gz - 0.5 KB)
+0038.696 (0) Table wp_mycred_log: Total expected rows (approximate): 23
+0038.703 (0) Table wp_mycred_log: Total rows added: 25 in 0.01 seconds
+0038.707 (0) Table wp_mycred_log: finishing file (backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-db-table-wp_mycred_log.table.gz - 0.9 KB)
+0038.719 (0) Table wp_pmpro_discount_codes: Total expected rows (approximate): 0
+0038.725 (0) Table wp_pmpro_discount_codes: Total rows added: 0 in 0.00 seconds
+0038.729 (0) Table wp_pmpro_discount_codes: finishing file (backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-db-table-wp_pmpro_discount_codes.table.gz - 0.3 KB)
+0038.740 (0) Table wp_pmpro_discount_codes_levels: Total expected rows (approximate): 0
+0038.747 (0) Table wp_pmpro_discount_codes_levels: Total rows added: 0 in 0.01 seconds
+0038.751 (0) Table wp_pmpro_discount_codes_levels: finishing file (backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-db-table-wp_pmpro_discount_codes_levels.table.gz - 0.5 KB)
+0038.761 (0) Table wp_pmpro_discount_codes_uses: Total expected rows (approximate): 0
+0038.767 (0) Table wp_pmpro_discount_codes_uses: Total rows added: 0 in 0.00 seconds
+0038.770 (0) Table wp_pmpro_discount_codes_uses: finishing file (backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-db-table-wp_pmpro_discount_codes_uses.table.gz - 0.3 KB)
+0038.780 (0) Table wp_pmpro_membership_levelmeta: Total expected rows (approximate): 0
+0038.785 (0) Table wp_pmpro_membership_levelmeta: Total rows added: 0 in 0.00 seconds
+0038.788 (0) Table wp_pmpro_membership_levelmeta: finishing file (backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-db-table-wp_pmpro_membership_levelmeta.table.gz - 0.3 KB)
+0038.797 (0) Table wp_pmpro_membership_levels: Total expected rows (approximate): 0
+0038.804 (0) Table wp_pmpro_membership_levels: Total rows added: 1 in 0.00 seconds
+0038.807 (0) Table wp_pmpro_membership_levels: finishing file (backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-db-table-wp_pmpro_membership_levels.table.gz - 0.6 KB)
+0038.816 (0) Table wp_pmpro_membership_orders: Total expected rows (approximate): 11
+0038.824 (0) Table wp_pmpro_membership_orders: Total rows added: 12 in 0.01 seconds
+0038.828 (0) Table wp_pmpro_membership_orders: finishing file (backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-db-table-wp_pmpro_membership_orders.table.gz - 1.4 KB)
+0038.840 (0) Table wp_pmpro_memberships_categories: Total expected rows (approximate): 0
+0038.848 (0) Table wp_pmpro_memberships_categories: Total rows added: 1 in 0.00 seconds
+0038.852 (0) Table wp_pmpro_memberships_categories: finishing file (backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-db-table-wp_pmpro_memberships_categories.table.gz - 0.4 KB)
+0038.864 (0) Table wp_pmpro_memberships_pages: Total expected rows (approximate): 0
+0038.870 (0) Table wp_pmpro_memberships_pages: Total rows added: 0 in 0.00 seconds
+0038.874 (0) Table wp_pmpro_memberships_pages: finishing file (backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-db-table-wp_pmpro_memberships_pages.table.gz - 0.3 KB)
+0038.886 (0) Table wp_pmpro_memberships_users: Total expected rows (approximate): 11
+0038.894 (0) Table wp_pmpro_memberships_users: Total rows added: 11 in 0.01 seconds
+0038.898 (0) Table wp_pmpro_memberships_users: finishing file (backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-db-table-wp_pmpro_memberships_users.table.gz - 0.8 KB)
+0038.910 (0) Table wp_wpam_actions: Total expected rows (approximate): 2
+0038.917 (0) Table wp_wpam_actions: Total rows added: 2 in 0.00 seconds
+0038.921 (0) Table wp_wpam_actions: finishing file (backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-db-table-wp_wpam_actions.table.gz - 0.4 KB)
+0038.933 (0) Table wp_wpam_affiliates: Total expected rows (approximate): 0
+0038.940 (0) Table wp_wpam_affiliates: Total rows added: 1 in 0.00 seconds
+0038.943 (0) Table wp_wpam_affiliates: finishing file (backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-db-table-wp_wpam_affiliates.table.gz - 0.8 KB)
+0038.953 (0) Table wp_wpam_affiliates_fields: Total expected rows (approximate): 12
+0038.959 (0) Table wp_wpam_affiliates_fields: Total rows added: 12 in 0.00 seconds
+0038.962 (0) Table wp_wpam_affiliates_fields: finishing file (backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-db-table-wp_wpam_affiliates_fields.table.gz - 0.7 KB)
+0038.972 (0) Table wp_wpam_creatives: Total expected rows (approximate): 0
+0038.978 (0) Table wp_wpam_creatives: Total rows added: 1 in 0.00 seconds
+0038.981 (0) Table wp_wpam_creatives: finishing file (backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-db-table-wp_wpam_creatives.table.gz - 0.5 KB)
+0038.990 (0) Table wp_wpam_events: Total expected rows (approximate): 0
+0039.010 (0) Table wp_wpam_events: Total rows added: 0 in 0.01 seconds
+0039.014 (0) Table wp_wpam_events: finishing file (backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-db-table-wp_wpam_events.table.gz - 0.4 KB)
+0039.024 (0) Table wp_wpam_impressions: Total expected rows (approximate): 0
+0039.030 (0) Table wp_wpam_impressions: Total rows added: 0 in 0.00 seconds
+0039.033 (0) Table wp_wpam_impressions: finishing file (backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-db-table-wp_wpam_impressions.table.gz - 0.4 KB)
+0039.045 (0) Table wp_wpam_messages: Total expected rows (approximate): 8
+0039.053 (0) Table wp_wpam_messages: Total rows added: 8 in 0.00 seconds
+0039.057 (0) Table wp_wpam_messages: finishing file (backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-db-table-wp_wpam_messages.table.gz - 1.1 KB)
+0039.069 (0) Table wp_wpam_paypal_logs: Total expected rows (approximate): 0
+0039.076 (0) Table wp_wpam_paypal_logs: Total rows added: 0 in 0.00 seconds
+0039.080 (0) Table wp_wpam_paypal_logs: finishing file (backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-db-table-wp_wpam_paypal_logs.table.gz - 0.4 KB)
+0039.092 (0) Table wp_wpam_tracking_tokens: Total expected rows (approximate): 4
+0039.100 (0) Table wp_wpam_tracking_tokens: Total rows added: 5 in 0.00 seconds
+0039.104 (0) Table wp_wpam_tracking_tokens: finishing file (backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-db-table-wp_wpam_tracking_tokens.table.gz - 0.5 KB)
+0039.115 (0) Table wp_wpam_tracking_tokens_purchase_logs: Total expected rows (approximate): 0
+0039.122 (0) Table wp_wpam_tracking_tokens_purchase_logs: Total rows added: 0 in 0.00 seconds
+0039.126 (0) Table wp_wpam_tracking_tokens_purchase_logs: finishing file (backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-db-table-wp_wpam_tracking_tokens_purchase_logs.table.gz - 0.3 KB)
+0039.137 (0) Table wp_wpam_transactions: Total expected rows (approximate): 2
+0039.144 (0) Table wp_wpam_transactions: Total rows added: 3 in 0.00 seconds
+0039.147 (0) Table wp_wpam_transactions: finishing file (backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-db-table-wp_wpam_transactions.table.gz - 0.7 KB)
+0039.156 (0) backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-db-table-wp_options.table.gz (1/33): adding to final database dump
+0039.210 (0) backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-db-table-wp_users.table.gz (2/33): adding to final database dump
+0039.213 (0) backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-db-table-wp_usermeta.table.gz (3/33): adding to final database dump
+0039.217 (0) backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-db-table-wp_commentmeta.table.gz (4/33): adding to final database dump
+0039.220 (0) backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-db-table-wp_comments.table.gz (5/33): adding to final database dump
+0039.222 (0) backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-db-table-wp_links.table.gz (6/33): adding to final database dump
+0039.224 (0) backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-db-table-wp_postmeta.table.gz (7/33): adding to final database dump
+0039.277 (0) backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-db-table-wp_posts.table.gz (8/33): adding to final database dump
+0039.479 (0) backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-db-table-wp_term_relationships.table.gz (9/33): adding to final database dump
+0039.481 (0) backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-db-table-wp_term_taxonomy.table.gz (10/33): adding to final database dump
+0039.484 (0) backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-db-table-wp_termmeta.table.gz (11/33): adding to final database dump
+0039.486 (0) backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-db-table-wp_terms.table.gz (12/33): adding to final database dump
+0039.488 (0) backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-db-table-wp_mycred_log.table.gz (13/33): adding to final database dump
+0039.491 (0) backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-db-table-wp_pmpro_discount_codes.table.gz (14/33): adding to final database dump
+0039.495 (0) backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-db-table-wp_pmpro_discount_codes_levels.table.gz (15/33): adding to final database dump
+0039.498 (0) backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-db-table-wp_pmpro_discount_codes_uses.table.gz (16/33): adding to final database dump
+0039.501 (0) backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-db-table-wp_pmpro_membership_levelmeta.table.gz (17/33): adding to final database dump
+0039.504 (0) backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-db-table-wp_pmpro_membership_levels.table.gz (18/33): adding to final database dump
+0039.507 (0) backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-db-table-wp_pmpro_membership_orders.table.gz (19/33): adding to final database dump
+0039.511 (0) backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-db-table-wp_pmpro_memberships_categories.table.gz (20/33): adding to final database dump
+0039.514 (0) backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-db-table-wp_pmpro_memberships_pages.table.gz (21/33): adding to final database dump
+0039.517 (0) backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-db-table-wp_pmpro_memberships_users.table.gz (22/33): adding to final database dump
+0039.520 (0) backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-db-table-wp_wpam_actions.table.gz (23/33): adding to final database dump
+0039.524 (0) backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-db-table-wp_wpam_affiliates.table.gz (24/33): adding to final database dump
+0039.527 (0) backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-db-table-wp_wpam_affiliates_fields.table.gz (25/33): adding to final database dump
+0039.530 (0) backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-db-table-wp_wpam_creatives.table.gz (26/33): adding to final database dump
+0039.533 (0) backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-db-table-wp_wpam_events.table.gz (27/33): adding to final database dump
+0039.536 (0) backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-db-table-wp_wpam_impressions.table.gz (28/33): adding to final database dump
+0039.540 (0) backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-db-table-wp_wpam_messages.table.gz (29/33): adding to final database dump
+0039.543 (0) backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-db-table-wp_wpam_paypal_logs.table.gz (30/33): adding to final database dump
+0039.550 (0) backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-db-table-wp_wpam_tracking_tokens.table.gz (31/33): adding to final database dump
+0039.554 (0) backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-db-table-wp_wpam_tracking_tokens_purchase_logs.table.gz (32/33): adding to final database dump
+0039.557 (0) backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-db-table-wp_wpam_transactions.table.gz (33/33): adding to final database dump
+0039.560 (0) backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-db.gz: finished writing out complete database file (1168 KB)
+0039.579 (0) Total database tables backed up: 33 (backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-db.gz, size: 1204107, checksum (SHA1): a804552c74f382206e920cdca540ce0ee5763445)
+0039.591 (0) backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-plugins.zip: plugins: This file has not yet been successfully uploaded: will queue
+0039.594 (0) backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-themes.zip: themes: This file has not yet been successfully uploaded: will queue
+0039.596 (0) backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-uploads.zip: uploads: This file has not yet been successfully uploaded: will queue
+0039.598 (0) backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-others.zip: others: This file has not yet been successfully uploaded: will queue
+0039.600 (0) backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-db.gz: db: This file has not yet been successfully uploaded: will queue
+0039.602 (0) Saving backup history. Total backup size: 44.5 MB
+0039.607 (0) Requesting upload of the files that have not yet been successfully uploaded (5)
+0039.614 (0) Cloud backup selection (1/1): email (last)
+0039.616 (0) Beginning dispatch of backup to remote (email)
+0039.621 (0) [Warning] backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-plugins.zip: This backup archive is 28.1 MB in size - the attempt to send this via email is likely to fail (few email servers allow attachments of this size). If so, you should switch to using a different remote storage method.
+0039.623 (0) backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-plugins.zip: email to: daryl...
+0203.309 (0) Recording as successfully uploaded: backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-plugins.zip (03a45388c7aabd4aa95cee19ab1357f9)
+0203.322 (0) Deleting local file: backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-plugins.zip: OK
+0203.325 (0) backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-themes.zip: email to: daryl...
+0281.487 (0) Recording as successfully uploaded: backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-themes.zip (d1bfdd1b7b978dba145a8745c534cc76)
+0281.498 (0) Deleting local file: backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-themes.zip: OK
+0281.502 (0) backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-uploads.zip: email to: daryl...
+0302.450 (1) Opened log file at time: Mon, 26 Dec 2016 07:27:59 +0000 on http://localhost/wifeenigma
+0302.454 (1) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.12.30 WP: 4.7 PHP: 5.6.15 (apache2handler, Windows NT CGDESIGNLAPTOP 6.2 build 9200 (Windows 8 Professional Edition) i586) MySQL: 5.5.5 WPLANG: en_AU Server: Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.15 safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 28.4M | 29M) multisite: N openssl: OpenSSL 1.0.1p 9 Jul 2015 mcrypt: Y LANG:  ZipArchive::addFile: Y
+0302.458 (1) Free space on disk containing Updraft's temporary directory: 72955.4 MB
+0302.464 (1) Backup run: resumption=1, nonce=8b81f5810c3f, begun at=1482736977 (302s ago), job type=backup, previous check-in=39.1s
+0302.470 (1) Scheduling a resumption (2) after 300 seconds (1482737579) in case this run gets aborted
+0302.482 (1) Checking if we have a zip executable available
+0302.485 (1) Creation of backups of directories: already finished
+0302.489 (1) Saving backup status to database (elements: 8)
+0302.497 (1) Database dump (WordPress DB): Creation was completed already
+0302.509 (1) backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-plugins.zip: plugins: This file has already been successfully uploaded
+0302.512 (1) backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-themes.zip: themes: This file has already been successfully uploaded
+0302.515 (1) backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-uploads.zip: uploads: This file has not yet been successfully uploaded: will queue
+0302.519 (1) backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-others.zip: others: This file has not yet been successfully uploaded: will queue
+0302.522 (1) backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-db.gz: db: This file has not yet been successfully uploaded: will queue
+0302.525 (1) Saving backup history. Total backup size: 44.5 MB
+0302.531 (1) Requesting upload of the files that have not yet been successfully uploaded (3)
+0302.535 (1) Cloud backup selection (1/1): email (last)
+0302.538 (1) Beginning dispatch of backup to remote (email)
+0302.540 (1) backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-uploads.zip: email to: daryl...
+0321.486 (0) Recording as successfully uploaded: backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-uploads.zip (14178013d16423057ab4083c78361e86)
+0321.494 (0) Deleting local file: backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-uploads.zip: OK
+0321.497 (0) backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-others.zip: email to: daryl...
+0346.251 (0) Recording as successfully uploaded: backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-others.zip (b7f55c93610a8506940742080d226373)
+0346.260 (0) Deleting local file: backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-others.zip: OK
+0346.263 (0) backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-db.gz: email to: daryl...
+0366.230 (1) Recording as successfully uploaded: backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-uploads.zip (14178013d16423057ab4083c78361e86)
+0366.241 (1) PHP event: code E_WARNING: unlink(C:\xampp\htdocs\wifeenigma/wp-content/updraft/backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-uploads.zip): No such file or directory (line 2818, C:\xampp\htdocs\wifeenigma\wp-content\plugins\updraftplus\class-updraftplus.php)
+0366.244 (1) Deleting local file: backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-uploads.zip: failed
+0366.247 (1) backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-others.zip: email to: daryl...
+0366.258 (1) PHP event: code E_WARNING: file_get_contents(C:\xampp\htdocs\wifeenigma/wp-content/updraft/backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-others.zip): failed to open stream: No such file or directory (line 482, C:\xampp\htdocs\wifeenigma\wp-content\plugins\postman-smtp\Postman\Postman-Mail\PostmanMessage.php)
+0375.317 (0) Recording as successfully uploaded: backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-db.gz (a8bf5846c76bc96bb8b9cc9901577a05)
+0375.326 (0) Deleting local file: backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-db.gz: OK
+0375.332 (0) Retain: beginning examination of existing backup sets; user setting: retain_files=2, retain_db=2
+0375.335 (0) Number of backup sets in history: 2; groups (db): 1
+0375.337 (0) Examining (for databases) backup set with group_id=0, nonce=8b81f5810c3f, datestamp=1482736977 (Dec 26 2016 07:22:57)
+0375.341 (0) This backup set is the backup set just made, so will not be deleted.
+0375.343 (0) Examining (for databases) backup set with group_id=0, nonce=4c5292053779, datestamp=1482736295 (Dec 26 2016 07:11:35)
+0375.346 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0375.349 (0) Number of backup sets in history: 2; groups (files): 1
+0375.353 (0) Examining (for files) backup set with nonce=8b81f5810c3f, datestamp=1482736977 (Dec 26 2016 07:22:57)
+0375.357 (0) This backup set is the backup set just made, so will not be deleted.
+0375.360 (0) This backup set is the backup set just made, so will not be deleted.
+0375.360 (0) This backup set is the backup set just made, so will not be deleted.
+0375.360 (0) This backup set is the backup set just made, so will not be deleted.
+0375.360 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0375.363 (0) Examining (for files) backup set with nonce=4c5292053779, datestamp=1482736295 (Dec 26 2016 07:11:35)
+0375.366 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0375.369 (0) Retain: saving new backup history (sets now: 2) and finishing retain operation
+0375.378 (0) Resume backup (8b81f5810c3f, 0): finish run
+0375.389 (0) Decremented the semaphore (fd) by 1
+0375.395 (0) Semaphore (fd) unlocked
+0375.398 (0) There were no errors in the uploads, so the 'resume' event (1) is being unscheduled
+0375.407 (1) Recording as successfully uploaded: backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-others.zip (b7f55c93610a8506940742080d226373)
+0375.410 (0) Fetching RSS news feed
+0375.420 (1) PHP event: code E_WARNING: unlink(C:\xampp\htdocs\wifeenigma/wp-content/updraft/backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-others.zip): No such file or directory (line 2818, C:\xampp\htdocs\wifeenigma\wp-content\plugins\updraftplus\class-updraftplus.php)
+0375.425 (1) Deleting local file: backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-others.zip: failed
+0375.427 (1) backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-db.gz: email to: daryl...
+0375.434 (0) Fetched RSS news feed; result is a: SimplePie
+0375.439 (1) PHP event: code E_WARNING: file_get_contents(C:\xampp\htdocs\wifeenigma/wp-content/updraft/backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-db.gz): failed to open stream: No such file or directory (line 482, C:\xampp\htdocs\wifeenigma\wp-content\plugins\postman-smtp\Postman\Postman-Mail\PostmanMessage.php)
+0375.447 (0) Sending email ('Files and database (Full backup)') report (attachments: 0, size: 0 KB) to: daryl...
+0379.169 (1) Recording as successfully uploaded: backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-db.gz (a8bf5846c76bc96bb8b9cc9901577a05)
+0379.176 (1) PHP event: code E_WARNING: unlink(C:\xampp\htdocs\wifeenigma/wp-content/updraft/backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-db.gz): No such file or directory (line 2818, C:\xampp\htdocs\wifeenigma\wp-content\plugins\updraftplus\class-updraftplus.php)
+0379.180 (1) Deleting local file: backup_2016-12-26-0722_The_Man_PA_8b81f5810c3f-db.gz: failed
+0379.186 (1) Retain: beginning examination of existing backup sets; user setting: retain_files=2, retain_db=2
+0379.189 (1) Number of backup sets in history: 2; groups (db): 1
+0379.192 (1) Examining (for databases) backup set with group_id=0, nonce=8b81f5810c3f, datestamp=1482736977 (Dec 26 2016 07:22:57)
+0379.195 (1) This backup set is the backup set just made, so will not be deleted.
+0379.198 (1) Examining (for databases) backup set with group_id=0, nonce=4c5292053779, datestamp=1482736295 (Dec 26 2016 07:11:35)
+0379.201 (1) This backup set remains non-empty (f=1/d=1); will retain in history
+0379.205 (1) Number of backup sets in history: 2; groups (files): 1
+0379.209 (1) Examining (for files) backup set with nonce=8b81f5810c3f, datestamp=1482736977 (Dec 26 2016 07:22:57)
+0379.212 (1) This backup set is the backup set just made, so will not be deleted.
+0379.216 (1) This backup set is the backup set just made, so will not be deleted.
+0379.216 (1) This backup set is the backup set just made, so will not be deleted.
+0379.216 (1) This backup set is the backup set just made, so will not be deleted.
+0379.216 (1) This backup set remains non-empty (f=1/d=1); will retain in history
+0379.219 (1) Examining (for files) backup set with nonce=4c5292053779, datestamp=1482736295 (Dec 26 2016 07:11:35)
+0379.223 (1) This backup set remains non-empty (f=1/d=1); will retain in history
+0379.226 (1) Retain: saving new backup history (sets now: 2) and finishing retain operation
+0379.233 (1) Resume backup (8b81f5810c3f, 1): finish run
+0379.240 (1) There were no errors in the uploads, so the 'resume' event (2) is being unscheduled
+0379.250 (1) Fetching RSS news feed
+0379.272 (1) Fetched RSS news feed; result is a: SimplePie
+0379.287 (1) Sending email ('Files and database (Full backup)') report (attachments: 0, size: 0 KB) to: daryl...
+0379.578 (0) The backup apparently succeeded and is now complete
+0383.065 (1) The backup apparently succeeded and is now complete

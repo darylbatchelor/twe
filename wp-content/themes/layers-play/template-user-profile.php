@@ -44,6 +44,16 @@ if ( 'POST' == $_SERVER['REQUEST_METHOD'] && !empty( $_POST['action'] ) && $_POS
     if ( !empty( $_POST['display_name'] ) )
         wp_update_user(array('ID' => $current_user->ID, 'display_name' => esc_attr( $_POST['display_name'] )));
       update_user_meta($current_user->ID, 'display_name' , esc_attr( $_POST['display_name'] ));
+
+ if ( !empty( $_POST['user-birthday'] ) ){
+        $date = esc_attr( $_POST['user-birthday']);
+        
+        
+        update_user_meta( $current_user->ID, 'user-birthday', $date );
+     
+
+    }
+
     if ( !empty( $_POST['anniversary'] ) )
         $date = esc_attr( $_POST['anniversary']);
         list($year, $month, $day) = split('[-]', $date);
@@ -61,6 +71,17 @@ if ( 'POST' == $_SERVER['REQUEST_METHOD'] && !empty( $_POST['action'] ) && $_POS
         update_user_meta( $current_user->ID, 'wife-birthday-year', $year );
 
     }
+
+    //tool activation
+
+    if ( !empty( $_POST['anniversary-tool'] && $_POST['anniversary-tool'] == "1" ) ){
+                
+        update_user_meta( $current_user->ID, 'anniversary-tool', 1 );
+      } else {
+        update_user_meta( $current_user->ID, 'anniversary-tool', 0 );
+      }
+      
+
     /* Redirect so the page will show updated info.*/
   /*I am not Author of this Code- i dont know why but it worked for me after changing below line to if ( count($error) == 0 ){ */
     if ( count($error) == 0 ) {
@@ -92,6 +113,14 @@ get_header(); // Loads the header.php template. ?>
     $( "#tabs" ).tabs();
   } );
   </script>
+
+  <style>
+
+  h2, h3, h4 {
+    color: #fff;
+  }
+
+  </style>
 	
             <?php if ( !is_user_logged_in() ) : ?>
 
@@ -103,18 +132,32 @@ get_header(); // Loads the header.php template. ?>
 
 <div id="tabs">
   <ul>
-    <li><a href="#tabs-1">Site Profile</a></li>
-    <li><a href="#tabs-2">Relationship Info</a></li>
-   <li><a href="#tabs-3">test info</a></li>
+    <li><a href="#tabs-1">Badges</a></li>
+    <li><a href="#tabs-2">Personal Details</a></li>
+    <li><a href="#tabs-3">Relationship Info</a></li>
+   <li><a href="#tabs-4">Tools</a></li>
   </ul>
-  <div id="tabs-1">
+
+   <div id="tabs-1">
+
+      <h2>My Badges</h2>
+      <br>
+
+      <?php echo  do_shortcode('[mycred_my_badges]'); ?>
+      <br>
+      <h2>Available badges</h2>
+      <br>
+      <?php echo  do_shortcode('[mycred_badges]'); ?>
+   </div><!--end tab 1-->
+
+  <div id="tabs-2">
     
 <?php
 $user_id = get_current_user_id();
   $all_meta_for_user = get_user_meta( $user_id );
  
 ?>
-             <h3>Update Information for &quot;<?php echo $current_user->user_login ?>&quot;</h3></br>
+             <h2>Update Information for &quot;<?php echo $current_user->user_login ?>&quot;</h2></br>
                 <?php if ( $_GET['updated'] == 'true' ) : ?> <div id="message" class="updated"><p>Your profile has been updated.</p></div> <?php endif; ?>
                 <?php if ( count($error) > 0 ) echo '<p class="error">' . implode("<br />", $error) . '</p>'; ?>
                 <form method="post" id="adduser" action="<?php the_permalink(); ?>">
@@ -164,6 +207,7 @@ $user_id = get_current_user_id();
                         <input class="text-input" name="email" type="text" id="email" value="<?php the_author_meta( 'user_email', $current_user->ID ); ?>" />
                     </p><!-- .form-email -->
 
+                    <h2>Change Password</h2>
 
                     <p class="form-password">
                         <label for="pass1"><?php _e('Password *', 'profile'); ?> </label>
@@ -174,11 +218,15 @@ $user_id = get_current_user_id();
                         <input class="text-input" name="pass2" type="password" id="pass2" />
                     </p><!-- .form-password -->
                  
+                     <h2>Your Birthday</h2>
+                     <?php $user_birthday =  $all_meta_for_user['user-birthday'][0]; ?>
+                       <p class="form-email">
+                            <p> <input type="date" id="user-birthday" name="user-birthday"  value="<?php  echo $user_birthday; ?>"></p>
+                         
+                    </p><!-- .form-email -->
 
-   
-
-  </div><!--end tab 1-->
-  <div id="tabs-2">
+  </div><!--end tab 2-->
+  <div id="tabs-3">
     <br>
 
     <?php 
@@ -206,230 +254,37 @@ $user_id = get_current_user_id();
 
                  
 
-  </div><!--end tab 2-->
+  </div><!--end tab 3-->
 
-    <div id="tabs-3">
+    <div id="tabs-4">
     <br>
-                    <p>
+
+      <h2>Unlocked tools</h2>
+      <br>
+      <h3>Anniversary Reminder Tool</h3>
+
+      <p>This tool sends you email reminders leading up to your anniversary with awesome anniversary gift ideas.  The result - hassle free gift picking for anniversaries!</p>
+      <br>
+      <p class="form-email">
+        <p>Activate Tool: <input type="checkbox" name="anniversary-tool" value="1" id="anniversary-tool" <?php if ($all_meta_for_user['anniversary-tool'][0] == 1) { echo 'checked'; }  ?>></p>
+                         
+      </p><!-- .form-email -->
+
+      <p>
 <?php
 
+echo date('Y-m-d');
 
-function send_flower_email(){
+$all_users = new DB_Emailer('anniversary');
+//$all_users->getAllToolUsers('anniversary');
+//$all_users->showUsers('anniversary');
+//$all_users->sendEmailToUsers("new Email to all Anniversary tool users", "Hey all Tool users");
+$all_users->sendAnniversaryReminderEmail('1');
+$all_users->sendAnniversaryReminderEmail('7');
+$all_users->sendAnniversaryReminderEmail('14');
+$all_users->sendAnniversaryReminderEmail('21');
+$all_users->sendAnniversaryReminderEmail('30');
 
-//Get current date
-  $date = date('Y-m-d');
-
-//split up date into $day and $month
-list($year, $month, $day) = split('[-]', $date);
-
-//check if current date matches monthly flower date
-
-  $yearly_random_dates = get_option('yearly_random_dates');
-
-
-
-
-foreach ($yearly_random_dates as $key => $value) {
-
-  if ($value == $date) {
-    
-    //look up all users who have flower subscription
-    global $wpdb;
-    $flower_members = $wpdb->get_results("SELECT `user_id` FROM `wp_pmpro_memberships_users` WHERE `membership_id` = 2", ARRAY_N);
-    $member_string = array();
-
-    //put all members id numbers in a string
-     foreach ($flower_members as $key => $value) {
-
-        array_push($member_string, $value[0]);
-      }
-
-
-    $member_string = implode(', ' , $member_string);
-
-    //query database for members with flower subscriptions and return display name and email
-
-    $flower_members = $wpdb->get_results("SELECT user_email, display_name FROM wp_users WHERE ID IN ($member_string)", ARRAY_A);
-
-    //send email to each person
-
-    foreach ($flower_members as $flower_members) {
-      
-      
-       $to = $flower_members['user_email'];
-                     
-       $subject = 'Its Flower Day!';
-       $body = "Hey " . $flower_members['display_name'] . "<br><br> Its Flower Day again!<br><br>Click on the below link to get your flowers<br><a href='google.com'>Click here to get you discounted flowers</a><br><br>Regards,<br><br> the guys at The Wife Enigma";
-
-       $headers = array('Content-Type: text/html; charset=UTF-8');
-                      
-       wp_mail( $to, $subject, $body, $headers ); 
-
-    }
-
-  }
-  
- }
-
-
-
-}
-
-//send_flower_email();
-
-
-function wife_birthday_reminder_email($days){
-//set timezone - may have to change this to DateTime class
-date_default_timezone_set('America/Chicago');
-
-// Get current date
-$date = date('Y-m-d');
-                           
-//get all birthdays 2 weeks from now
-$date = date('Y-m-d', strtotime($date . ' +' . $days . ' days'));
-                          
-//split up date into $day and $month
-list($year, $month, $day) = split('[-]', $date);
-
-                         
-
-//arguments for query below
-$args = array(
-    'meta_query' => array(
-        array(
-            'key' => 'wife-birthday-day',
-            'value' => $day,
-            'compare' => '='
-           
-        ),
-        array(
-            'key' => 'wife-birthday-month',
-            'value' => $month,
-            'compare' => '='
-            
-        )
-    )
-);
-
-//query database for user obj array and get all users who have a wife with a birthday 2 weeks away
-$allusers = get_users( $args);
-if (!empty($allusers)) {
-         foreach ($allusers as $allusers) {
-      
-               $to = $allusers->user_email;
-               
-               if ($days == '1') {
-               $subject = 'Your partners birthday is tomorrow!';
-               $body = "Hey " . $allusers->display_name . "<br><br> Your wife's birthday is tomorrow!<br><br> I hope you have something and she appreciates it.<br><br>Regards,<br><br> the guys at The Wife Enigma";
-               } else {
-               $subject = 'Your partners birthday is in ' . $days . ' days!';
-               $body = "Hey " . $allusers->display_name . "<br><br> Your wife's birthday is in " . $days . " days.<br><br> If you haven't got her a present already, now would be a good time to start to think about what to get her... Don't leave it to the last minute!<br><br>Regards,<br><br> the guys at The Wife Enigma";
-               }
-               $headers = array('Content-Type: text/html; charset=UTF-8');
-                
-               wp_mail( $to, $subject, $body, $headers ); 
-                   //send email function goes here using details above function send_birthday_reminder($notice (14 - days))
-          }
-    }                         
-
-
-}
-
-wife_birthday_reminder_email('14');
-wife_birthday_reminder_email('7');
-wife_birthday_reminder_email('1');
-
-function wife_anniversary_reminder_members($days){
-// Get current date
-$date = date('Y-m-d');
-                          
-//get all birthdays 2 weeks from now
-$date = date('Y-m-d', strtotime($date . ' +' . $days . ' days'));
-                      
-//split up date into $day and $month
-list($year, $month, $day) = split('[-]', $date);
-
-                         
-
-//arguments for query below
-$args = array(
-    'meta_query' => array(
-        array(
-            'key' => 'anniversary-day',
-            'value' => $day,
-            'compare' => '='
-           
-        ),
-        array(
-            'key' => 'anniversary-month',
-            'value' => $month,
-            'compare' => '='
-            
-        )
-        //add in argument to filter for certain membership levels
-    )
-);
-
-//query database for user obj array and get all users who have a wife with a birthday 2 weeks away
-$allusers = get_users( $args);
-
-if (!empty($allusers)) {
-         foreach ($allusers as $allusers) {
-      //need to look up anniversary year to figure out what anniversary it is
-       $user_id = $allusers->ID;
-       $key = 'anniversary-year';
-       $single = true;
-       $anniversary_year = get_user_meta( $user_id, $key, $single );
-       $anniversary = intval($year) - intval($anniversary_year);
-      
-     //once year is established need to look up gift ideas in custom post
-$args = array(
-   'meta_query' => array(
-       array(
-           'key' => 'year',
-           'value' => $anniversary,
-           'compare' => '=',
-       )
-   )
-);
-global $wpdb;
-$anniversary_post = $wpdb->get_results("SELECT * FROM $wpdb->postmeta
-WHERE meta_key = 'year' AND  meta_value = '" . $anniversary . "' LIMIT 1", OBJECT);
-
-$anniversary_post_id = $anniversary_post[0]->post_id;
-$postmeta_array = get_post_meta($anniversary_post_id);
-
-
-$modern_gift = $postmeta_array['modern_gift'][0];
-$traditional_gift_uk = $postmeta_array['traditional_gift_uk'][0];
-$traditional_gift_us = $postmeta_array['traditional_gift_us'][0];
-$gemstone = $postmeta_array['gemstone'][0];
-$color = $postmeta_array['color'][0];
-$ideas = $postmeta_array['ideas'][0];
-
-//delete this -> echo $modern_gift . $traditional_gift_us . $traditional_gift_uk . $gemstone . $color . $ideas;
-      //mail info
-               $to = $allusers->user_email;
-
-               if ($days == '1') {
-               $subject = 'Your anniversary is tomorrow!';
-               $body = "Hey " . $allusers->display_name . "<br><br> Your " . $anniversary . " year anniversary is tomorrow!<br><br> I hope you have everything all sorted.<br><br>Regards,<br><br> the guys at The Wife Enigma";
-               } else {
-               $subject = 'Your anniversary is in ' . $days . ' days!';
-               $body = "Hey " . $allusers->display_name . "<br><br> Your " . $anniversary . " year anniversary is in " . $days . " days.<br><br> If you haven't got her a present already, now would be a good time to start to think about what to get her... For " . $anniversary . " year anniversaries, the following is a list of the usual anniversary themes that may help:<br><br> Modern Gift: " . $modern_gift . "<br>Traditional Gift (UK): " . $traditional_gift_uk . "<br>Traditional Gift (US): " . $traditional_gift_us . "<br> Gemstone: " . $gemstone . "<br>Color: " . $color . "<br><br>Here are also a few ideas that may work for you:<br> " . $ideas . "<br><br>Don't leave it to the last minute!<br><br>Regards,<br><br> the guys at The Wife Enigma";
-               }
-               $headers = array('Content-Type: text/html; charset=UTF-8');
-                
-              wp_mail( $to, $subject, $body, $headers ); 
-                   //send email function goes here using details above function send_birthday_reminder($notice (14 - days))
-          }
-    }                         
-
-
-}
-
-//wife_anniversary_reminder_members('1');
-//wife_anniversary_reminder_members('7');
 
 
 ?>
@@ -438,7 +293,7 @@ $ideas = $postmeta_array['ideas'][0];
 
                  
 
-  </div><!--end tab 3-->
+  </div><!--end tab 4-->
   
 </div>
 

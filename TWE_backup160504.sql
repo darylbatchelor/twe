@@ -19,8 +19,6 @@ SET time_zone = "+00:00";
 --
 -- Database: `wife_enigma`
 --
-CREATE DATABASE IF NOT EXISTS `wife_enigma` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
-USE `wife_enigma`;
 
 -- --------------------------------------------------------
 
