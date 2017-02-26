@@ -306,8 +306,7 @@ class WPAM_Plugin
         public function doLoginShortcode()
         {
             $home_page_id = get_option( WPAM_PluginConfig::$HomePageId );
-            $home_page_obj = get_post($home_page_id);
-            $home_page_url = $home_page_obj -> guid;
+            $home_page_url = get_permalink($home_page_id);
                         
             if(is_user_logged_in()) {
                 global $current_user;
@@ -410,10 +409,11 @@ class WPAM_Plugin
                 
                 $purchaseLogId = $ipn_data['txn_id'];
                 $purchaseAmount = $ipn_data['mc_gross'];//TODO - later calculate sub-total only
+                $buyer_email = $ipn_data['payer_email'];
                 $strRefKey = $tracking_value;
                 $requestTracker = new WPAM_Tracking_RequestTracker();
-                $requestTracker->handleCheckoutWithRefKey( $purchaseLogId, $purchaseAmount, $strRefKey);
-                WPAM_Logger::log_debug('Simple WP Cart Integration - Commission tracked for transaction ID: '.$purchaseLogId.'. Purchase amt: '.$purchaseAmount);
+                $requestTracker->handleCheckoutWithRefKey( $purchaseLogId, $purchaseAmount, $strRefKey, $buyer_email);
+                WPAM_Logger::log_debug('Simple WP Cart Integration - Commission tracked for transaction ID: '.$purchaseLogId.', Purchase amt: '.$purchaseAmount.', Buyer Email: '.$buyer_email);
             }
         }
         
@@ -421,9 +421,9 @@ class WPAM_Plugin
 		if ( $purchaseInfo['purchase_log']['processed'] >= 2 ) {
 			$purchaseAmount = $purchaseInfo['purchase_log']['totalprice'] - $purchaseInfo['purchase_log']['base_shipping'];
 			$purchaseLogId = $purchaseInfo['purchase_log']['id'];
-			
+			$buyer_email = wpsc_get_buyers_email($purchaseLogId);
 			$requestTracker = new WPAM_Tracking_RequestTracker();
-			$requestTracker->handleCheckout( $purchaseLogId, $purchaseAmount );
+			$requestTracker->handleCheckout( $purchaseLogId, $purchaseAmount, $buyer_email );
 		}
 	}
         
@@ -481,6 +481,7 @@ class WPAM_Plugin
             $tax = $order->get_total_tax();
             WPAM_Logger::log_debug('WooCommerce Integration - Total amount: ' . $total . ', Total shipping: ' . $shipping . ', Total tax: ' . $tax);
             $purchaseAmount = $total - $shipping - $tax;
+            $buyer_email = $order->billing_email;
             
             $wpam_refkey = get_post_meta($order_id, '_wpam_refkey', true);
             $wpam_id = get_post_meta($order_id, '_wpam_id', true);
@@ -494,8 +495,8 @@ class WPAM_Plugin
             }
             
             $requestTracker = new WPAM_Tracking_RequestTracker();
-            WPAM_Logger::log_debug('WooCommerce Integration - awarding commission for order ID: '.$order_id.'. Purchase amount: '.$purchaseAmount);
-            $requestTracker->handleCheckoutWithRefKey( $order_id, $purchaseAmount, $wpam_refkey);
+            WPAM_Logger::log_debug('WooCommerce Integration - awarding commission for order ID: '.$order_id.', Purchase amount: '.$purchaseAmount.', Affiliate ID: '.$wpam_refkey.', Buyer Email: '.$buyer_email);
+            $requestTracker->handleCheckoutWithRefKey( $order_id, $purchaseAmount, $wpam_refkey, $buyer_email);
         }
                 
         public function WooCommerceRefundTransaction($order_id)
@@ -517,11 +518,11 @@ class WPAM_Plugin
             if ( $total < 0 ) {
                 $total = 0;
             }
-            
+            $buyer_email = '';
             WPAM_Logger::log_debug('JigoShop Integration - new order received. Order ID: '.order_id.'. Purchase amt: '.$total);
 
             $requestTracker = new WPAM_Tracking_RequestTracker();
-            $requestTracker->handleCheckout( $order_id, $total );
+            $requestTracker->handleCheckout( $order_id, $total, $buyer_email );
             
         }
         
@@ -553,15 +554,17 @@ class WPAM_Plugin
                 return;
             }
             $purchaseAmount = edd_get_payment_amount( $payment_id );
-            WPAM_Logger::log_debug('Easy Digital Downlaods Integration - Awarding commission for Order ID: '.$payment_id.'. Purchase amt: '.$purchaseAmount);
+            $buyer_email = $payment_meta['email'];
+            WPAM_Logger::log_debug('Easy Digital Downlaods Integration - Awarding commission for Order ID: '.$payment_id.'. Purchase amt: '.$purchaseAmount.', Buyer Email: '.$buyer_email);
             $requestTracker = new WPAM_Tracking_RequestTracker();
-            $requestTracker->handleCheckoutWithRefKey($payment_id, $purchaseAmount, $strRefKey);
+            $requestTracker->handleCheckoutWithRefKey($payment_id, $purchaseAmount, $strRefKey, $buyer_email);
         }
 
 	public function onExchangeCheckout( $transaction_id, $method, $method_id, $status, $customer_id, $cart_object, $args ) {
 		$purchaseAmount = it_exchange_get_transaction_subtotal( $transaction_id, false );
+                $buyer_email = '';
 		$requestTracker = new WPAM_Tracking_RequestTracker();
-		$requestTracker->handleCheckout( $transaction_id, $purchaseAmount );
+		$requestTracker->handleCheckout( $transaction_id, $purchaseAmount, $buyer_email );
 
 		return $transaction_id;
 	}

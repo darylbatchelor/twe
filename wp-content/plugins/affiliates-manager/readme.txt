@@ -3,8 +3,8 @@ Contributors: wp.insider, affmngr, ElementGreen
 Donate link: https://wpaffiliatemanager.com/
 Tags: affiliate, affiliates manager, affiliate marketing, affiliate plugin, affiliates, referral, affiliate program, ads, advertising, affiliate tool, digital downloads, e-commerce, tracking, track affiliates, leads, affiliate software, woocommerce, affiliate campaign, paypal  
 Requires at least: 3.5
-Tested up to: 4.6
-Stable tag: 2.3.6
+Tested up to: 4.7
+Stable tag: 2.4.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -132,6 +132,23 @@ View screenshots in the following page:
 https://wpaffiliatemanager.com/screen-shots/
 
 == Changelog ==
+
+= 2.4.1 =
+- Added a function to retrieve the referrer ID via IP address.
+- Created a new addon to integrate MemberMouse with affiliates manager plugin. See details below:
+  https://wpaffiliatemanager.com/affiliates-manager-membermouse-plugin-integration/
+
+= 2.4.0 =
+- Fixed a bug where the login page could redirect to a 404 page when the affiliate homepage URL is customized
+
+= 2.3.9 =
+- Fixed some typos and updated all the language files.
+
+= 2.3.8 =
+- Affiliate home page and registration page URLs can now be configured in the settings.
+
+= 2.3.7 =
+- Added a new column to the commissions table to save the email address of the buyer. All future transactions will capture the email address of the buyer.
 
 = 2.3.6 =
 - Click Tracking menu now shows the IP Address of the user.

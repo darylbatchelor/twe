@@ -20,7 +20,7 @@ function add_loginout_link( $items, $args ) {
     }
     elseif (!is_user_logged_in() && $args->theme_location == 'layers-secondary-right') {
         $items .= '<li><a href="'. site_url('wp-login.php') .'">Log In</a></li>';
-        $items .= '<li class="top-menu-register"><a href="'. site_url('wp-login.php?action=register') .'">Register</a></li>';
+        $items .= '<li class="top-menu-register"><a href="'. site_url('wp-login.php?action=register') .'">JOIN FOR FREE</a></li>';
     }
     return $items;
 }
@@ -84,9 +84,9 @@ echo $args['before_title'] . $title . $args['after_title'];
         $items .= '<li><a href="'. site_url('/user-profile/') .'">My Account ' . get_avatar( $current_user->user_email, 20 ); '</a></li>';
         $items .= '<li><a href="'. wp_logout_url() .'">Log Out</a></li>';
     }
-    elseif (!is_user_logged_in() && $args->theme_location == 'layers-secondary-right') {
+    elseif (!is_user_logged_in() ) {
         $items .= '<li><a href="'. site_url('wp-login.php') .'">Log In</a></li>';
-        $items .= '<li class="top-menu-register"><a href="'. site_url('wp-login.php?action=register') .'">Register</a></li>';
+        $items .= '<li class="top-menu-register"><a href="'. site_url('wp-login.php?action=register') .'">JOIN FOR FREE</a></li>';
     }
   echo $items;
 
