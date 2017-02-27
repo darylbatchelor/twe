@@ -23,10 +23,10 @@ $SearchIndex = "All";
 
 
 // Your AWS Access Key ID, as taken from the AWS Your Account page
-$aws_access_key_id = "AKIAJKEZXRWSRZOM3K2A";
+$aws_access_key_id = "";
 
 // Your AWS Secret Key corresponding to the above ID, as taken from the AWS Your Account page
-$aws_secret_key = "AePh9YDcaSk4ZOkcCyKGC7HPohGE0pqsc8UsZAwQ";
+$aws_secret_key = "";
 
 
 // The region you are interested in
@@ -37,7 +37,7 @@ $uri = "/onca/xml";
 $params = array(
     "Service" => "AWSECommerceService",
     "Operation" => "ItemSearch",
-    "AWSAccessKeyId" => "AKIAJKEZXRWSRZOM3K2A",
+    "AWSAccessKeyId" => "",
     "AssociateTag" => "themanpa-20",
     "SearchIndex" => $SearchIndex,
     "Keywords" => $Keywords,
